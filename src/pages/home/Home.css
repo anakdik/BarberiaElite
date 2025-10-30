@@ -1,0 +1,160 @@
+  * {
+    padding: 0;
+    margin: 0;
+  }
+
+  .libertinus-math-regular {
+    font-family: "Libertinus Math", system-ui;
+    font-weight: 400;
+    font-style: normal;
+  }
+
+  /* ---------- ENCABEZADO ---------- */
+  .home-encabezado {
+    background-image: var(--fondoHomeArriba);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    color: white;
+    margin-bottom: 25px;
+  }
+
+  .home-menu {
+    position: absolute;
+    top: 20px;
+    left: 60px;
+    display: flex;
+  }
+
+  .home-menu article {
+    display: flex;
+    align-items: center;
+    color: white;
+  }
+
+  .home-login {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-right: 10px;
+    margin-left: 120px;
+    border: 1px solid white;
+  }
+
+  .home-menu a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 22px;
+  }
+
+  .home-titulo2 {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+
+  /* ---------- CONTENIDO PRINCIPAL ---------- */
+  .home-contenido {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 20px 40px;
+    gap: 90px;
+  }
+
+  .home-bloque-izquierdo {
+    width: 50%;
+    text-align: center;
+    flex: 1;
+    position: absolute;
+    top: 24%;
+    left: 20%;
+  }
+
+  .home-logo {
+    display: flex;
+  width: 320px;
+  height: 320px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  margin-left: -50px; 
+  font-weight: bold;
+ }
+
+  .home-texto {
+    font-size: 25px;
+    line-height: 1.6;
+    max-width: 700px;
+    color: white;
+    transform: translateX(-35%);
+    
+  }
+
+  .home-imagen-diagonal {
+    width: 500px;
+    height: 600px;
+    overflow: hidden;
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 10%;
+    right: 5%;
+  }
+
+  .home-imagen-diagonal img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  /* ---------- SECCIÓN DE SERVICIOS ---------- */
+  .home-seccion-servicios {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    padding: 60px 40px;
+    background-image: var(--fondoHomeAbajo);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    box-sizing: border-box;
+    padding: 115px 40px 60px;
+  }
+
+  /* ---------- PIE DE PÁGINA ---------- */
+  .home-pie-pagina {
+    background-color: #0b132b;
+    color: white;
+    text-align: center;
+    padding: 30px 10px;
+    font-size: 16px;
+    border-top: 2px solid #1f3b73;
+  }
+
+  .home-redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    margin-bottom: 15px;
+  }
+
+  .home-redes a img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  .home-redes a img:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+  }
