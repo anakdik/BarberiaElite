@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./Registro.css";
 import { useNavigate } from "react-router-dom";
-
-// Importar imágenes desde src
 import logo from "../../assets/imagenes/logo.jpeg";
 import fondoRegistro from "../../assets/imagenes/fondodegra3.jpg";
 
@@ -23,7 +21,11 @@ function Registro() {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    console.log("Datos registrados:", formData);
+
+    // Guardar datos del usuario en localStorage
+    localStorage.setItem("usuario", JSON.stringify(formData));
+
+    alert("Registro exitoso ✅");
     navigate("/login");
   };
 
@@ -41,12 +43,10 @@ function Registro() {
         alignItems: "center",
       }}
     >
-      {/* Logo */}
       <div className="registro-logo">
         <img src={logo} alt="Barbería Elite" />
       </div>
 
-      {/* Formulario */}
       <form className="registro-box" onSubmit={handleSubmit}>
         <input
           type="email"

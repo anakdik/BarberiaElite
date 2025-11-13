@@ -1,19 +1,13 @@
 /* Contenedor principal: formulario + logo + fondo */
 .containerLogin {
   display: flex;
+  flex-direction: row; /* ✅ Esto pone el logo a la derecha */
   justify-content: center;
   align-items: center;
   gap: 100px;
-  min-height: 10vh;
+  min-height: 100vh; /* ✅ Se cambió para ocupar toda la pantalla */
   margin: 0;
   font-family: Arial, sans-serif;
-}
-
-.loginBoxLogin form {
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  align-items: center;
 }
 
 /* Caja del formulario */
@@ -22,6 +16,13 @@
   flex-direction: column;
   gap: 15px;
   z-index: 1;
+}
+
+.loginBoxLogin form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 }
 
 .loginBoxLogin input {
@@ -56,12 +57,20 @@
 .registerTextLogin {
   font-size: 24px;
   color: white;
+  text-align: center;
 }
 
 .registerTextLogin a {
   color: black;
   text-decoration: none;
   font-weight: bold;
+}
+
+/* Logo al lado derecho */
+.logoLogin {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .logoLogin img {
