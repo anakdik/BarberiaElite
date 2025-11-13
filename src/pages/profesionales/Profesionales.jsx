@@ -70,3 +70,4 @@ const Profesionales = () => {
 };
 
 export default Profesionales;
+  

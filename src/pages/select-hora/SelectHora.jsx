@@ -54,9 +54,13 @@ const SelectHora = () => {
         </main>
       </div>
 
-      <a href="../profesionales/Profesionales.jsx" className="boton-siguiente-selectHora">
+      <a href="/profesionales" className="boton-siguiente-selectHora">
         Siguiente
       </a>
+
+
+    
+      
     </div>
   );
 };

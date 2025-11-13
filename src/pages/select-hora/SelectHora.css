@@ -1,13 +1,25 @@
-.fondoSelectHora {
+* {
   margin: 0;
-  font-family: Arial, sans-serif;
+  padding: 0;
+  box-sizing: border-box;
 }
+
+html, body {
+  height: 100%;
+}
+
+.fondoSelectHora {
+  min-height: 100vh; /* ocupa toda la pantalla */
+  background-color: #001432;
+  background-attachment: fixed; /* mantiene el fondo fijo */
+}
+  
 
 /* Contenedor principal */
 .container-selectHora {
   max-width: 600px;
   margin: auto;
-  padding: 30px 20px;
+  padding: 45px 20px;
   background-color: rgba(0, 20, 50, 0.85);
   border-radius: 10px;
   position: relative;
